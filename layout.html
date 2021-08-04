@@ -201,33 +201,35 @@
                             </li>
                             <li class="contact-items1"><a href="" class="linkedin-c"><i class="devicon-linkedin-plain"></i>
                                     AgustinaAcevedo98</a></li>
-                            <li class="contact-items1"><a href="" class="email-c"> <i class="fas fa-envelope"></i> agustina.eacevedo1998@gmail.com</a></li>
+                            <li class="contact-items1"><a href="" class="email-c"> <i class="far fa-envelope"></i> agustina@gmail.com</a></li>
                         </ul>                 
                     </section>
                 </section>
                 
                 <section class="contact-column">
-                    <h2 class="title-contact"><b>Escribeme</b></h2>>
+                    <h2 class="title-contact"><b>Escribeme</b></h2>
                     <form action="post">
-                        <label for="" class="details">
-                            Nombre * <input type="text" name="name" required placeholder="p. ej.: Agustina">
-                        </label>
-                        <label class="details"> Apellido *
-                            <input type="text" name="surname" required placeholder="p. ej.: Acevedo">
-                        </label>
-                        <br>
-                        <label for="" class="details">Email *
-                            <input type="text" name="email" required placeholder="p. ej.: agustina.eacevedo1998@gmail.com">
+                        <div class="nombre-apellido">
+                            <label for="" class="details">
+                                <p class="box-name">Nombre *</p>  <input class="name-c" type="text" name="name" required placeholder="p. ej.: Agustina">
+                            </label>
+                            <label class="details"> <p class="box-name">Apellido *</p> 
+                                <input type="text" class="name-c" name="surname" required placeholder="p. ej.: Acevedo">
+                            </label>
+                        </div>
+
+                        <label for="" class="details1"> <p class="box-name">Email *</p>
+                            <input class="email-type" type="text" name="email" required placeholder="p. ej.: agustina.eacevedo1998@gmail.com">
 
                         </label>
-                        <br>
-                        <label for="" class="details">Mensaje * <br>
+                        
+                        <label for="" class="details3"><p class="box-name">Mensaje *</p>
 
-                            <textarea name="mensje" id="mensaje" cols="50" rows="5" maxlength="350" required placeholder="Escriba un mensaje aqui"></textarea>
+                            <textarea class="mensaje-box" name="mensje" id="mensaje" cols="30" rows="10" required placeholder="Escriba un mensaje aqui"></textarea>
                            
                         </label>
                     </form>
-                    <input type="submit" value="Enviar" class="enviar">
+                    <input class="buttom-send" type="submit" value="Enviar" class="enviar">
 
                 </section>
 
@@ -240,16 +242,16 @@
     <!--Fin seccion de contacto-->
     <footer>
         <ul class="footer-nav">
-            <li> <a href="#hola">Hola</a></li>
-            <li><a href="#conocimientos">Conocimientos</a></li>
-            <li><a href="#proyecto"> Proyecto</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li class="footer-f"> <a href="#hola">Hola</a></li>
+            <li class="footer-f"><a href="#conocimientos">Conocimientos</a></li>
+            <li class="footer-f"><a href="#proyecto"> Proyecto</a></li>
+            <li class="footer-f"><a href="#contacto">Contacto</a></li>
         </ul>
         <ul class="footer-redes">
-            <li class="items-footer"><a href=""><i class="devicon-twitter-original"></i></a></li>
-            <li><a href=""><i class="devicon-github-original"></i></a></li>
-            <li><a href=""><i class="devicon-linkedin-plain"></i></a></li>
-            <li><a href=""><i class="fas fa-envelope"></i></a></li>
+            <li class="items-footer"><a href=""><i class="fab fa-twitter"></i></a></li>
+            <li class="items-footer"><a href=""><i class="fab fa-github"></i></a></li>
+            <li class="items-footer"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+            <li class="items-footer"> <a href=""><i class="fas fa-mail-bulk"></i></a></li>
         </ul>
         <p class="ultimo"> Hecho con ❤️ </p>
 

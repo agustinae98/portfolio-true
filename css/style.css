@@ -69,6 +69,8 @@ li#contact-bottom:hover{
     transition: 0.2s;
 }
 
+
+
 /*Aqui empezare a aplicar css a la seccion presentacion*/
 .section-presentacion {
     display: flex;
@@ -355,52 +357,231 @@ li#contact-bottom:hover{
 }
 .contact-social-links{
     display: flex;
-    width: 400px;
+    width: 50%;
     margin-top: 50px;
     flex-direction: column;
     list-style: none;
+
 }
 .contact-items1>a{
     display: flex;
     text-decoration: none;
     color: black;
-    margin: 20px;
+    margin: 10px;
     line-height: 0.9;
     font-family:'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 16px;
+    align-items: center;
 
 }
 .devicon-twitter-original{
     margin-right: 20px;
     color: cadetblue;
-    font-size: 20px;
+    font-size: 15px;
     background-color:#def1f0;
+    padding:10px;
 }
 .devicon-github-original{
     margin-right: 20px;
     color: cadetblue;
     font-size: 20px;
     background-color:#def1f0;
+    padding:10px;
 }
 .devicon-linkedin-plain{
     margin-right: 20px;
     color: cadetblue;
     font-size: 20px;
     background-color:#def1f0;
+    padding:10px;
 }
-.fas{
+.far{
     margin-right: 20px;
     color: cadetblue;
-    font-size: 20px;
+    font-size: 15px;
     background-color:#def1f0;
     border-radius: 10px;
+    padding:10px;
+
 }
-.contact-items1:hover{
-    color: #00FFD7;
+.contact-items1 > .twitter-c > .devicon-twitter-original:hover{
+background-color: #59b8a9;
+color: #ffffff;
+border-radius: 100px;
+
 }
-.contact-items1:hover .devicon-twitter-original{
-    background-color: #00FFD7;
-    color: #fff;
+input:focus,
+textarea:focus,
+a:focus {
+  box-shadow: 0px 0px 7px #00FFD7;
+  outline: 0;
+  border-radius: 60px;
+}
+.contact-items1>.github-c>.devicon-github-original:hover{
+    background-color: #59b8a9;
+    color: #ffffff;
+    border-radius: 100px;
+}
+.contact-items1>.linkedin-c>.devicon-linkedin-plain:hover{
+    background-color: #59b8a9;
+    color: #ffffff;
+    border-radius: 100px; 
+}
+.contact-items1>.email-c>.correo:hover{
+    background-color: #59b8a9;
+    color: #ffffff;
+    border-radius: 100px;
+}
+.contact-items1>a:hover{
+    color: #59b8a9;
+}
+.contact-items1:hover .devicon-twitter-original {
+    background-color: #59b8a9;
+    color: #ffffff;
+    border-radius: 60px; 
+}
+.contact-items1:hover .devicon-github-original{
+    background-color: #59b8a9;
+    color: #ffffff;
+    border-radius: 60px;
+}
+.contact-items1:hover .devicon-linkedin-plain{
+    background-color: #59b8a9;
+    color: #ffffff;
+    border-radius: 60px;
+}
+.contact-items1:hover .far{
+    background-color: #59b8a9;
+    color: #ffffff;
+    border-radius: 60px;
+}
+.nombre-apellido{
+    display: flex;
+    justify-content: space-between;
+    width: 475px;
+    flex-direction: row;
+    margin-bottom: 30px;
+    margin-right: 15px;
+}
+.details{
+    width: 50%;
+    flex-direction: column;
+    margin-right: 15px;
+}
+.name-c{
+    padding: 10px 15px;
     border-radius: 20px;
+    background-color: #f6f7fb;
+    border: 1px solid #f6f7fb;
+    width: 80%;
+    margin-right: 20px;
+    font-family:'Montserrat', sans-serif;
+}
+.box-name{
+    margin-bottom: 20px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+}
+.email-type{
+    width: 80%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: #f6f7fb;
+    border: 1px solid #f6f7fb;
+    font-family:'Montserrat', sans-serif;
+    margin-bottom: 30px;
+}
+.mensaje-box{
+    width: 80%;
+    border-radius: 20px;
+    background-color: #f6f7fb;
+    border: 1px solid #f6f7fb;
+    margin-bottom: 30px;
+    padding: 1rem;
+}
+    .buttom-send{
+    background-color: rgb(52, 196, 176);
+    border-radius: 100px;
+    color: #ffffff;
+    font-family:'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 40px;
+    padding-left: 40px;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .buttom-send:hover{
+        background-color: rgb(103, 180, 170);
+        
+    }
+
+footer{
+    display: flex;
+    width: 100%;
+    background-color: #15a0a0;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.footer-nav{
+    display: flex;
+   text-transform: uppercase;
+   margin: 50px;
+
+}
+.footer-f{
+    display: inline;
+    list-style: none;
+    margin: 15px;
+
+}
+.footer-f a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family:'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.footer-redes{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+
+}
+.items-footer{
+    list-style: none;
+    margin: 5px;
+}
+.fa-mail-bulk,.fa-linkedin-in,.fa-github,.fa-twitter
+{
+    font-size: 25px;
+    color:#15a0a0;
+    background-color:#ffffff;
+    border-radius: 100px;
+    padding: 5px;
+}
+
+.fa-mail-bulk:hover,.fa-linkedin-in:hover,.fa-github:hover,.fa-twitter:hover{
+    background-color: #15a0a0;
+    color: #ffffff;
+    border: #ffffff 1px solid;
+}
+.ultimo{
+    color: #ffffff;
+    font-family:'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    margin-top: 10px;
 }
