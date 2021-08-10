@@ -21,6 +21,11 @@ header {
     
     
 }
+@media(max-width: 1050px){
+    header{
+    display: none;
+    }
+}
 .menu-container{
 
     text-align: center;
@@ -84,33 +89,55 @@ a.contacto1:hover{
 /*Aqui empezare a aplicar css a la seccion presentacion*/
 .section-presentacion {
     display: flex;
-    padding: 7rem;   
-    max-width: 80vw;
-    justify-content: space-between; 
+    padding-top: 7rem; 
+    padding-bottom: 8rem;  
+    width: 70%;
+    justify-content: space-around; 
     align-items: center;
-    border: 20px;
-    min-height: 35vw;
+    margin-left: 15%;
+    
     
 }
+@media(max-width:1050px){
+    .section-presentacion{
+        flex-direction: column;
+    }
+    .name-description{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        
+    
+    
+    }
+    
+}
+@media(max-width:550px){
+    .programmer{
+        width: 450px;
+
+    }
+}
 .name-description {
-    padding-left: 9rem;
-    max-width: 100%;
+    display: flex;
     flex-direction: column;
-    text-align: left;
+    width: 70%;
+
 }
 #holasoy{
     font-family: 'Philosopher', sans-serif;
     color: black;
     font-weight: 700;
     font-size: 40px;
-    padding-left: 1rem;
+    
 }
 #mi-name{
     color: #59b8a9;
     font-size: 50px;
     font-family: 'Fira Mono', monospace;
     padding-top:5px;
-    padding-left: 1rem;
     font-weight: 700;
     
 }
@@ -118,20 +145,16 @@ a.contacto1:hover{
     color: black;
     font-size: 20px;
     font-family: 'IBM Plex Sans Condensed', sans-serif;
-    padding-left:1rem;
     padding-bottom: 2rem;
 }
-.section-presentacion a.boton-de-presentacion{
-    padding-left: 2rem;
-}
+
 .boton-de-presentacion {
+    
     color: rgb(55, 69, 73);
     background-color: #50b4a4;
     border-radius: 40px;
     padding-top:10px;
     padding-bottom:10px;
-    padding-left:20px;
-    padding-right:20px;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     text-align:center;
@@ -140,7 +163,7 @@ a.contacto1:hover{
     letter-spacing: 2px;
     font-size: 15px;
     text-decoration: none;
-    margin-left: 150px;
+    width: 150px;
 }
 .boton-de-presentacion:hover{
     background-color: cadetblue;
@@ -154,16 +177,23 @@ a.contacto1:hover{
     background-color: #f6f7fb;
     justify-content: center;
     width: 100%;
+    align-content: center;
 
 }
 .skills{
     padding:2rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10rem;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
     
 
 .title-skills { 
     font-family:'Montserrat', sans-serif;
-    padding-top: 10px;
+    padding-top: 8rem;
     padding-bottom: 50px;
     font-weight: 800;
     font-size: 45px;
@@ -172,16 +202,15 @@ a.contacto1:hover{
 }
 
 .parrafo-skills{
+    display: flex;
     font-family: 'Montserrat', sans-serif ;
     font-weight: 200;
     font-size:15px;
-    margin-left:30px;
-    margin-right: 30px;
-    width: 400px;
     text-align: center;
-    padding-bottom: 50px;
-    padding-left: 220px;
     line-height: 25px;
+    justify-content: center;
+    width: 50%;
+    padding-bottom: 2rem;
 }
 .skill-boxes{
     display: flex;
@@ -189,6 +218,16 @@ a.contacto1:hover{
     justify-content: space-between;
     flex-wrap: wrap;
 
+}
+@media(max-width:915px){
+    .skill-boxes{
+        width: 100%;
+        justify-content: center;
+    }
+    .boxes{
+        width: 200px;
+        height: 200px;
+    }
 }
 .boxes {
     display: flex;
@@ -237,20 +276,26 @@ a.contacto1:hover{
      font-size: 70px;
  }
  blockquote {
+    display: flex;
     font-family: 'Philosopher', sans-serif;
     font-style: italic;
     font-weight: 400;
     font-size: 20px;
     letter-spacing: 2px;
     line-height: 30px;
-    width: 450px;
+    width: 50%;
     margin: 2rem;
  }
  .quote-author {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
  }
+@media(max-width:500px){
 
+    blockquote{
+       padding: 0px 20px;
+    }
+}
 /*Fin de quotes*/
 
 /*Comienzo de Mis proyectos*/
@@ -594,3 +639,4 @@ footer{
     margin-bottom: 50px;
     margin-top: 10px;
 }
+
