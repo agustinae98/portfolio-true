@@ -452,7 +452,7 @@ a.contacto1:hover{
 
 }
 .contact-items1{
-    width: 50%;
+    width: 100%;
 }
 .contact-items1>a{
     display: flex;
